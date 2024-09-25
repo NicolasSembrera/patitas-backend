@@ -2,6 +2,7 @@ package pe.edu.cibertec.patitas_backend.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import pe.edu.cibertec.patitas_backend.dto.LoginRequestDTO;
 import pe.edu.cibertec.patitas_backend.dto.LoginResponseDTO;
 import pe.edu.cibertec.patitas_backend.service.AutenticacionService;
