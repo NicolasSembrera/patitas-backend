@@ -49,7 +49,7 @@ public class AutenticacionServiceImpl implements AutenticacionService {
     @Override
     public void cerrarSesion(LogOutRequestDTO logOutRequestDTO) throws IOException {
         try {
-            File file = new File("C:\\Users\\Nicolas\\Desktop\\Aprender\\Desarrollo_Web\\patitas-backend\\src\\main\\resources\\registroCierreSesion.txt");
+            File file = new File("src/main/resources/registroCierreSesion.txt");
             FileWriter hoja = new FileWriter(file, true);
             BufferedWriter escritor = new BufferedWriter(hoja);
             escritor.write("|          "+ logOutRequestDTO.tipoDocumento() +"         | "+logOutRequestDTO.numeroDocumento() + " |" + logOutRequestDTO.FechaCierre()+ "|");
