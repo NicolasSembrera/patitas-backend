@@ -42,6 +42,7 @@ public class AutenticacionController {
     @PostMapping("/logout")
     public void CerrarSesion(@RequestBody LogOutRequestDTO logOutRequestDTO){
         try {
+            Thread.sleep(15000);
             autenticacionService.cerrarSesion(logOutRequestDTO);
             }
          catch (Exception e ) {
